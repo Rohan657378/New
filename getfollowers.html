@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Free Followers & Articles</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: linear-gradient(135deg, #ff416c, #ff4b2b);
+      color: #333;
+      margin: 0;
+      padding: 0;
+    }
+    .container {
+      max-width: 800px;
+      margin: 40px auto;
+      padding: 20px;
+      background: #fff;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+    header {
+      text-align: center;
+      margin-bottom: 30px;
+    }
+    header h1 {
+      color: #ff4b2b;
+    }
+    .form-section {
+      text-align: center;
+      margin-bottom: 40px;
+    }
+    .form-section input, .form-section select {
+      width: 80%;
+      padding: 10px;
+      margin: 10px 0;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      font-size: 16px;
+    }
+    .form-section button {
+      padding: 10px 20px;
+      background: #ff4b2b;
+      border: none;
+      color: #fff;
+      font-size: 18px;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+    .form-section button:hover {
+      background: #ff416c;
+    }
+    .message {
+      margin-top: 20px;
+      font-size: 18px;
+      font-weight: bold;
+    }
+    .articles {
+      margin-top: 40px;
+    }
+    .articles h2 {
+      text-align: center;
+      color: #ff4b2b;
+    }
+    .article {
+      border-bottom: 1px solid #ccc;
+      padding: 20px 0;
+    }
+    .article:last-child {
+      border-bottom: none;
+    }
+    .article h3 {
+      margin: 0 0 10px;
+      color: #ff4b2b;
+    }
+    .article p {
+      margin: 0;
+      line-height: 1.6;
+    }
+    .logo-container {
+      display: grid;
+      place-items: center;
+      height: 20vh;
+    }
+    .logo-container img {
+      width: 100px; 
+      height: auto; 
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>Get Free 1000 Free Followers Daily</h1>
+      <p>Boost your social presence and achieve your dream Instagram family!</p>
+    </header>
+
+    <div class="logo-container">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/e/e7/Instagram_logo_2016.svg" alt="Logo" class="logo"/>
+    </div>
+
+    <section class="form-section">
+      <input type="text" id="username" placeholder="Enter your username" required />
+      <br />
+      <select id="followers">
+        <option value="100">100 Followers</option>
+        <option value="500">500 Followers</option>
+        <option value="1000" selected>700 Followers</option>
+        <option value="5000">900 Followers</option>
+        <option value="10000">1k Followers</option>
+      </select>
+      <br />
+      <button onclick="sendFollowers()">Get Followers</button>
+      <p class="message" id="message"></p>
+    </section>
+
+    <h2>Latest Posts & Articles</h2>
+
+    <div class="article">
+      <h3>How to Grow Your Social Media Following</h3>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit...</p>
+    </div>
+
+    <div class="article">
+      <h3>5 Tips for Effective Online Branding</h3>
+      <p>Praesent at dui ac felis consectetur commodo...</p>
+    </div>
+
+    <div class="article">
+      <h3>The Ultimate Guide to Engaging Content</h3>
+      <p>Aliquam erat volutpat. Sed ac leo vitae lacus vestibulum finibus...</p>
+    </div>
+
+    <div class="article">
+      <h3>10 Proven Strategies to Increase Engagement</h3>
+      <p>Discover powerful techniques to boost your engagement rate and attract more followers...</p>
+    </div>
+
+    <div class="article">
+      <h3>How to Monetize Your Instagram Account</h3>
+      <p>Turn your social media presence into a source of income with these effective strategies...</p>
+    </div>
+
+    <div class="article">
+      <h3>Best Hashtags to Gain More Followers in 2025</h3>
+      <p>Learn the most trending hashtags to maximize your reach and grow your audience...</p>
+    </div>
+
+    <div class="article">
+      <h3>Understanding Instagram’s Algorithm: 2025 Update</h3>
+      <p>Stay ahead of the game by mastering the latest Instagram algorithm changes...</p>
+    </div>
+
+    <div class="article">
+      <h3>How to Create Viral Content on Social Media</h3>
+      <p>Learn the secrets behind creating viral posts that capture audience attention...</p>
+    </div>
+
+    <div class="article">
+      <h3>Instagram Stories Hacks You Should Know</h3>
+      <p>Enhance your Instagram Stories with these little-known tricks and tips...</p>
+    </div>
+
+  </div>
+
+  <script>
+    function sendFollowers() {
+      const username = document.getElementById("username").value;
+      const followers = document.getElementById("followers").value;
+      const message = document.getElementById("message");
+
+      if (username.trim() === "") {
+        message.innerHTML = "⚠️ Please enter your username!";
+        message.style.color = "red";
+      } else {
+        message.innerHTML = `✅ ${followers} followers are being sent to @${username}! Please wait some times `;
+        message.style.color = "green";
+      }
+    }
+  </script>
+</body>
+</html>
